@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dados [
+<!ELEMENT dados (cliente+)>
+<!ELEMENT cliente (nome, telefone, credito)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>
+<!ATTLIST cliente estado CDATA #REQUIRED>
+<!ATTLIST cliente cidade CDATA #REQUIRED>
+<!ELEMENT credito (#PCDATA)>
+]>
+<?xml-stylesheet type="text/xsl" href="exe12.xsl"?>
+<dados>
+    <cliente  estado="RJ" cidade="Niterói">
+        <nome>Fulano</nome>
+        <telefone>1234-5678</telefone>
+        <credito>200.00</credito>
+    </cliente>
+
+    <cliente estado="RJ" cidade="Rio de Janeiro">
+        <nome>Beltrano</nome>
+        <telefone>8765-4321</telefone>
+        <credito>400.00</credito>
+    </cliente>
+
+    <cliente estado="RJ" cidade="Nova Friburgo">
+        <nome>Cicrano</nome>
+        <telefone>1234-8765</telefone>
+        <credito>300.00</credito>
+    </cliente>
+
+    <cliente estado="SP" cidade="Campos do Jordão">
+        <nome>José</nome>
+        <telefone>4321-5678</telefone>
+        <credito>350.00</credito>
+    </cliente>
+
+    <cliente estado="SP" cidade="São Paulo">
+        <nome>Maria</nome>
+        <telefone>1243-5687</telefone>
+        <credito>400.00</credito>
+    </cliente>
+
+    <cliente estado="DF" cidade="Brasília">
+        <nome>Antônio</nome>
+        <telefone>6587-2143</telefone>
+        <credito>500.00</credito>
+    </cliente>
+</dados>
+
